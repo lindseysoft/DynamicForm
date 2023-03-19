@@ -18,7 +18,7 @@
           rounded-t
           py-2
           px-4
-          text-blue-dark
+          text-black
           font-semibold
         "
         :href="'#' + tab.id"
@@ -30,7 +30,7 @@
         @click.prevent="($event) => (activeTabIndex = tab.id)"
         @click="($event) => (activeTabIndex = tab.id)"
       >
-        {{ tab.name }} {{ tabIndex < items.length ? ' | ' : '' }}
+        {{ tab.name }}
       </a>
     </nav>
 
