@@ -52,7 +52,10 @@ function onUpdateActiveIndex(activeIndex) {
 }
 </script>
 
-<style >
+<style>
+.nav-item {
+  background: red;
+}
 .tabrow {
   text-align: center;
   list-style: none;
