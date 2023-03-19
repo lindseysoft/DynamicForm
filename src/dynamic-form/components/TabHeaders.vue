@@ -20,6 +20,7 @@
           px-4
           text-black
           font-semibold
+          my-2
         "
         :href="'#' + tab.id"
         :parentId="tab.parentId"

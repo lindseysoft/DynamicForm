@@ -8,7 +8,7 @@
         parentId == activeTabIndex
       "
     >
-      <legend>{{ name }}</legend>
+      <legend class="my-4">{{ name }}</legend>
       <RecursiveComponent
         :activeTabIndex="activeTabIndex"
         :id="id"
@@ -21,47 +21,47 @@
 </template>
 
 <script setup>
-import { defineProps, ref } from 'vue'
-import RecursiveComponent from './RecursiveComponent.vue'
+import { defineProps, ref } from 'vue';
+import RecursiveComponent from './RecursiveComponent.vue';
 
 //const activeTabIndex = ref(props.parentId)
 
 const props = defineProps({
   id: {
     type: Number,
-    required: true
+    required: true,
   },
   parentId: {
     type: Number,
-    required: true
+    required: true,
   },
   parentTabId: {
     type: Number,
-    required: true
+    required: true,
   },
   name: {
     type: String,
-    required: true
+    required: true,
   },
   type: {
     type: String,
-    required: false
+    required: false,
   },
   items: {
     type: Array,
     required: false,
-    default: []
+    default: [],
   },
   tabIndex: {
     type: Number,
-    default: 0
+    default: 0,
   },
   activeTabIndex: {
     type: Number,
     required: false,
-    default: 0
-  }
-})
+    default: 0,
+  },
+});
 </script>
 
 <style scoped>
