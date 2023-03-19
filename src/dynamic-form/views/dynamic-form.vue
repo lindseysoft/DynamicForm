@@ -1,9 +1,24 @@
 <template>
   <div class="display:flex; flex-direction: column;">
     <form style="display: flex; flex-direction: column">
-      <RecursiveComponent :items="sortItems(items)" :activeTabIndex="activeTabIndex" />
+      <RecursiveComponent
+        :items="sortItems(items)"
+        :activeTabIndex="activeTabIndex"
+      />
       <button
-        class="inline-flex items-center my-2 px-4 py-2 hover:bg-red-700 text-sm font-medium rounded-md bg-[#40748c] text-[#FDFDFD]"
+        class="
+          inline-flex
+          items-center
+          my-2
+          px-4
+          py-2
+          hover:bg-red-700
+          text-sm
+          font-medium
+          rounded-md
+          bg-[#40748c]
+          text-[#FDFDFD]
+        "
         type="submit"
       >
         Submit
@@ -13,31 +28,31 @@
 </template>
 
 <script setup>
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref } from 'vue';
 
-import RecursiveComponent from '../components/RecursiveComponent.vue'
+import RecursiveComponent from '../components/RecursiveComponent.vue';
 
-import dynamicFormData from '../data/dynamic-form.json'
+import dynamicFormData from '../data/dynamic-form.json';
 
-const items = ref(dynamicFormData)
+const items = ref(dynamicFormData);
 
-const activeTabIndex = ref(2)
-const parentId = ref(0)
-const parentTabId = ref(0)
+const activeTabIndex = ref(2);
+const parentId = ref(0);
+const parentTabId = ref(0);
 
-const tabIndex = ref(0)
+const tabIndex = ref(0);
 
 function sortItems(listToSort) {
-  listToSort.sort((a, b) => a.order - b.order)
-  return listToSort
+  listToSort.sort((a, b) => a.order - b.order);
+  return listToSort;
 }
 
 function onUpdateActiveIndex(activeIndex) {
-  activeTabIndex.value = activeIndex
+  activeTabIndex.value = activeIndex;
 }
 </script>
 
-<style scoped>
+<style>
 .tabrow {
   text-align: center;
   list-style: none;

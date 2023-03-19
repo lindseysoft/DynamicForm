@@ -1,7 +1,8 @@
 import { createApp } from 'vue';
-import './style.css';
-import './assets/main.css'
+
+import './assets/main.css';
 import App from './App.vue';
+import './index.css';
 
 import Input from '@/dynamic-form/components/Input.vue';
 import Checkbox from '@/dynamic-form/components/Checkbox.vue';
@@ -20,4 +21,4 @@ app.component('Group', Group);
 app.component('TextArea', TextArea);
 /* app.use(plugin, BootstrapVue) */
 
-createApp(App).mount('#app');
+app.mount('#app');
