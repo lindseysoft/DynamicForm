@@ -1,0 +1,309 @@
+[
+  {
+    "id": 1,
+    "parentId": -1,
+    "parentTabId": -1,
+    "itemType": "tabs",
+    "name": "some tabs",
+    "order": 1,
+    "items": [
+      {
+        "id": 2,
+        "parentId": 1,
+        "parentTabId": -1,
+        "itemType": "tab",
+        "name": "Stuff",
+        "order": 1,
+        "items": [
+          {
+            "id": 3,
+            "parentId": 2,
+            "parentTabId": 2,
+            "itemType": "Tabs",
+            "name": "more tabs",
+            "order": 5,
+            "items": [
+              {
+                "id": 4,
+                "parentId": 3,
+                "parentTabId": 2,
+                "itemType": "tab",
+                "name": "Names Aliases and Dates",
+                "order": 2,
+                "items": [
+                  {
+                    "id": 5,
+                    "parentId": 4,
+                    "parentTabId": 2,
+                    "itemType": "Group",
+                    "name": "Names",
+                    "order": 2,
+                    "items": [
+                      {
+                        "id": 6,
+                        "parentId": 5,
+                        "parentTabId": 4,
+                        "itemType": "Input",
+                        "name": "maidenName",
+                        "componentType": "Input",
+                        "type": "text",
+                        "label": "Maiden Name",
+                        "required": true,
+                        "value": "",
+                        "placeholder": "Maiden Name"
+                      },
+                      {
+                        "id": 7,
+                        "parentId": 5,
+                        "parentTabId": 4,
+                        "itemType": "Input",
+                        "name": "Alias",
+                        "componentType": "Input",
+                        "type": "text",
+                        "label": "alias",
+                        "required": true,
+                        "placeholder": "Alias",
+                        "value": ""
+                      }
+                    ]
+                  },
+                  {
+                    "id": 8,
+                    "parentId": 4,
+                    "parentTabId": 4,
+                    "itemType": "Group",
+                    "name": "Dates",
+                    "order": 1,
+                    "items": [
+                      {
+                        "id": 9,
+                        "parentId": 8,
+                        "parentTabId": 4,
+                        "itemType": "Input",
+                        "name": "birthdate",
+                        "componentType": "Input",
+                        "type": "date",
+                        "label": "Birth Date",
+                        "required": true,
+                        "placeholder": "Birthdate",
+                        "value": ""
+                      },
+                      {
+                        "id": 10,
+                        "parentId": 8,
+                        "parentTabId": 4,
+                        "itemType": "Input",
+                        "name": "bookdate",
+                        "componentType": "Input",
+                        "type": "date",
+                        "label": "Book Date",
+                        "required": true,
+                        "placeholder": "Book Date",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 11,
+                "parentId": 3,
+                "parentTabId": 2,
+                "itemType": "tab",
+                "name": "Group 3 Only",
+                "order": 1,
+                "items": [
+                  {
+                    "id": 12,
+                    "parentId": 11,
+                    "parentTabId": 11,
+                    "itemType": "Group",
+                    "name": "Group 3",
+                    "items": [
+                      {
+                        "id": 13,
+                        "parentId": 12,
+                        "parentTabId": 11,
+                        "itemType": "Input",
+                        "name": "Field 1",
+                        "componentType": "Input",
+                        "type": "text",
+                        "label": "Text Field",
+                        "required": true,
+                        "placeholder": "Field 1",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "parentId": 2,
+            "parentTabId": 2,
+            "itemType": "Group",
+            "name": "Name",
+            "order": 4,
+            "items": [
+              {
+                "id": 15,
+                "parentId": 14,
+                "parentTabId": 2,
+                "itemType": "Input",
+                "order": 2,
+                "name": "firstname",
+                "componentType": "Input",
+                "type": "text",
+                "label": "First Name",
+                "required": false,
+                "value": "",
+                "placeholder": "First Name"
+              },
+              {
+                "id": 16,
+                "parentId": 148,
+                "parentTabId": 2,
+                "itemType": "Input",
+                "order": 1,
+                "name": "lastname",
+                "componentType": "Input",
+                "type": "text",
+                "label": "Last Name",
+                "required": false,
+                "value": "Lindsey",
+                "placeholder": "Last Name"
+              }
+            ]
+          },
+          {
+            "id": 17,
+            "parentId": 2,
+            "parentTabId": 2,
+            "itemType": "Checkbox",
+            "name": "omitFromWeb",
+            "order": 2,
+            "type": "Checkbox",
+            "label": "Omit from web",
+            "required": false,
+            "placeholder": "",
+            "value": false
+          },
+          {
+            "id": 18,
+            "parentId": 2,
+            "parentTabId": 2,
+            "itemType": "Checkbox",
+            "name": "highrisk",
+            "order": 1,
+            "type": "checkbox",
+            "label": "High Risk",
+            "required": false,
+            "placeholder": "",
+            "value": true
+          },
+          {
+            "id": 19,
+            "parentId": 2,
+            "parentTabId": 2,
+            "itemType": "Group",
+            "name": "Dates",
+            "order": 3,
+            "items": [
+              {
+                "id": 20,
+                "parentId": 19,
+                "parentTabId": 2,
+                "itemType": "Input",
+                "order": 2,
+                "name": "somedate",
+                "componentType": "Input",
+                "type": "date",
+                "label": "Some Date",
+                "required": true,
+                "placeholder": "Some date",
+                "value": ""
+              },
+              {
+                "id": 21,
+                "parentId": 19,
+                "parentTabId": 2,
+                "itemType": "Input",
+                "order": 1,
+                "name": "somedate2",
+                "componentType": "Input",
+                "type": "date",
+                "label": "Some Date 2",
+                "required": true,
+                "placeholder": "Some Date2",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "parentId": 1,
+        "parentTabId": 22,
+        "itemType": "tab",
+        "name": "Yaba Daba And Desc",
+        "order": 2,
+        "items": [
+          {
+            "id": 23,
+            "parentId": 22,
+            "parentTabId": 22,
+            "itemType": "TextArea",
+            "order": 1,
+            "name": "description",
+            "type": "",
+            "label": "Description",
+            "required": true,
+            "placeholder": "Description",
+            "value": ""
+          },
+          {
+            "id": 24,
+            "parentId": 22,
+            "parentTabId": 22,
+            "itemType": "Group",
+            "name": "Yaba Daba",
+            "order": 3,
+            "items": [
+              {
+                "id": 25,
+                "parentId": 24,
+                "parentTabId": 22,
+                "itemType": "Input",
+                "order": 2,
+                "name": "yaba",
+                "componentType": "Input",
+                "type": "text",
+                "label": "Yaba",
+                "required": true,
+                "placeholder": "Yaba",
+                "value": ""
+              },
+              {
+                "id": 26,
+                "parentId": 24,
+                "parentTabId": 22,
+                "itemType": "Input",
+                "order": 1,
+                "name": "daba",
+                "componentType": "Input",
+                "type": "text",
+                "label": "Daba",
+                "required": true,
+                "placeholder": "Daba",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
