@@ -26,7 +26,7 @@
       </li>
     </ul>
 
-    <Tab
+    <!-- <Tab
       v-for="(tab, tabIndex) in items"
       :id="tab.id"
       :items="tab.items"
@@ -35,72 +35,71 @@
       :parentTabId="tab.parentTabId"
       :activeTabIndex="activeTabIndex"
     />
-    <!-- <RecursiveComponent
-        :id="id"
-        :items="items"
-        :parentid="parentId"
-        :parentTabId="parentTabId"
-        :activeTabIndex="activeTabIndex"
-
-        
-      /> -->
+    -->
+    <RecursiveComponent
+      :id="id"
+      :items="items"
+      :parentid="parentId"
+      :parentTabId="parentTabId"
+      :activeTabIndex="activeTabIndex"
+    />
   </div>
 </template>
 
 <script setup>
 /* import { defineProps, ref } from 'vue' */
 //@click="($event) => modifyTabIndex(tabIndex)"//
-import RecursiveComponent from './RecursiveComponent.vue'
-import Tab from './Tab.vue'
+import RecursiveComponent from './RecursiveComponent.vue';
+import Tab from './Tab.vue';
 
-const emit = defineEmits(['updateActiveIndex'])
+const emit = defineEmits(['updateActiveIndex']);
 
 function modifyTabIndex(tabIndex) {
-  this.props.activeTabIndex = tabIndex
-  emit('updateActiveIndex', tabIndex)
+  this.props.activeTabIndex = tabIndex;
+  emit('updateActiveIndex', tabIndex);
 }
 
 const props = defineProps({
   id: {
     type: Number,
-    required: true
+    required: true,
   },
   parentId: {
     type: Number,
-    required: true
+    required: true,
   },
   parentTabId: {
     type: Number,
-    required: true
+    required: true,
   },
   name: {
     type: String,
-    required: true
+    required: true,
   },
   label: {
     type: String,
-    required: true
+    required: true,
   },
   type: {
     type: String,
-    required: true
+    required: true,
   },
   items: {
     type: Array,
     required: true,
-    default: []
+    default: [],
   },
   activeTabIndex: {
     type: Number,
     required: true,
-    default: 0
+    default: 0,
   },
   tabIndex: {
     type: Number,
-    default: 0
+    default: 0,
   },
   eventName: {
-    type: String
-  }
-})
+    type: String,
+  },
+});
 </script>
